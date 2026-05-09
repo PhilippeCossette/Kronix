@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --primary: hsl(84, 97%, 65%);
+  --text: hsl(0, 0%, 100%);
+  --text-dark: hsl(72, 20%, 6%);
+  --text-muted: hsl(0, 0%, 60%);
+  --background: hsl(72, 20%, 6%);
+  --background-light: hsl(0, 0%, 13%);
+  --background-gray: hsl(0, 0%, 85%);
+  --background-primary: hsl(66, 60%, 8%);
+  --cta-background: hsl(65, 82%, 8%);
+
+  --font-default: "Outfit", sans-serif;
+  --font-accent: "Plus Jakarta Sans", sans-serif;
+
+  --text-h1: clamp(3rem, 8vw, 8rem);
+  --text-h2: clamp(2rem, 4vw, 3rem);
+  --text-h3: clamp(1.5rem, 3vw, 2rem);
+  --text-h4: clamp(1.25rem, 2vw, 1.5rem);
+  --text-h5: clamp(1.05rem, 1.5vw, 1.1rem);
+  --text-body: clamp(0.95rem, 1.2vw, 1.125rem);
+  --text-small: clamp(0.8rem, 1vw, 0.95rem);
+  --text-extra-small: clamp(0.7rem, 0.8vw, 0.8rem);
+  --text-button: clamp(0.9rem, 1.1vw, 1rem);
+
+  --section-x: clamp(1.25rem, 5vw, 6rem);
+  --section-y: clamp(3rem, 8vw, 7rem);
+  --section-y-sm: clamp(2rem, 6vw, 4rem);
+  --max-width: 1400px;
+}
+
+@theme {
+  --color-primary: hsl(84 97% 65%);
+  --color-text: hsl(0 0% 100%);
+  --color-text-dark: hsl(72 20% 6%);
+  --color-background: hsl(72 20% 6%);
+  --color-background-light: hsl(0 0% 13%);
+  --color-background-gray: hsl(0 0% 85%);
+  --color-background-primary: hsl(66 60% 8%);
+  --color-@@: hsl(65 82% 8%);
+  --font-default: var(--font-default);
+  --font-accent: var(--font-accent);
+
+  --text-h1: var(--text-h1);
+  --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
+  --text-h4: var(--text-h4);
+  --text-h5: var(--text-h5);
+  --text-body: var(--text-body);
+  --text-small: var(--text-small);
+  --text-extra-small: var(--text-extra-small);
+  --text-button: var(--text-button);
+  --text-muted: var(--text-muted);
+
+  --spacing-section-x: var(--section-x);
+  --spacing-section-y: var(--section-y);
+  --spacing-section-y-sm: var(--section-y-sm);
+}
+
+body {
+  font-family: var(--font-accent);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.section {
+  max-width: var(--max-width);
+  padding-inline: var(--spacing-section-x);
+  padding-block: var(--spacing-section-y);
+  margin-inline: auto;
+}
+
+.section-full {
+  padding-block: var(--spacing-section-y);
+  margin-inline: auto;
+}
