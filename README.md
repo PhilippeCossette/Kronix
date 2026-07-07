@@ -41,7 +41,9 @@ https://kronix-demo.vercel.app/
 
 ## 📸 Preview
 
-> Add screenshots or GIFs here.
+![Kronix screenshot](./public/screenshot/screenshot-1.png)
+![Kronix screenshot](./public/screenshot/screenshot-2.png)
+![Kronix screenshot](./public/screenshot/screenshot-3.png)
 
 ---
 
