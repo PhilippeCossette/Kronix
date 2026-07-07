@@ -55,11 +55,11 @@ export default function CTA({}: Props) {
   return (
     <section
       ref={scope}
-      className="section flex items-center justify-center bg-[linear-gradient(180deg,white_50%,var(--background)_50%)]"
+      className=" flex items-center justify-center bg-[linear-gradient(180deg,white_50%,var(--background)_50%)]"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        className="cta z-50 relative overflow-clip w-[90%] grid justify-items-center gap-8 rounded-4xl py-12 px-12 md:px-24 bg-(--cta-background)"
+        className="max-w-250 cta z-50 relative overflow-clip w-[90%] grid justify-items-center gap-8 rounded-4xl py-12 px-12 md:px-24 bg-(--cta-background)"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0 }}

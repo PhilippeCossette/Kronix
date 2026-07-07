@@ -1,6 +1,10 @@
 import { stagger, useAnimate, useInView, motion } from "framer-motion";
 import { useEffect } from "react";
 import scrollToSection from "../utils/scrollToSection";
+import FaceBook from "@/assets/logos/facebook.svg";
+import Instagram from "@/assets/logos/instagram.svg";
+import Indeed from "@/assets/logos/indeed.svg";
+import Dribble from "@/assets/logos/dribble.svg";
 
 type Props = {};
 
@@ -60,22 +64,22 @@ export default function Footer({}: Props) {
               initial={{ opacity: 0, y: 20 }}
               href="https://facebook.com"
             >
-              <img src="src/assets/logos/facebook.svg" alt="Facebook" />
+              <img src={FaceBook} alt="Facebook" />
             </motion.a>
             <motion.a
               initial={{ opacity: 0, y: 20 }}
               href="https://instagram.com"
             >
-              <img src="src/assets/logos/instagram.svg" alt="Instagram" />
+              <img src={Instagram} alt="Instagram" />
             </motion.a>
             <motion.a initial={{ opacity: 0, y: 20 }} href="https://indeed.com">
-              <img src="src/assets/logos/indeed.svg" alt="indeed" />
+              <img src={Indeed} alt="indeed" />
             </motion.a>
             <motion.a
               initial={{ opacity: 0, y: 20 }}
               href="https://dribbble.com"
             >
-              <img src="src/assets/logos/dribble.svg" alt="dribble" />
+              <img src={Dribble} alt="dribble" />
             </motion.a>
           </div>
         </div>

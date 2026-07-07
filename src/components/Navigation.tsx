@@ -9,7 +9,7 @@ import Button from "./Button";
 import { useEffect, useState } from "react";
 import HamburgerButton from "./HamburgerButton";
 import scrollToSection from "../utils/scrollToSection";
-
+import KronixLogo from "@/assets/logos/Kronix.svg";
 type Props = {};
 
 export default function Navigation({}: Props) {
@@ -73,8 +73,8 @@ function DesktopNavigation() {
     >
       <motion.img
         initial={{ opacity: 0, y: 20 }}
-        src="src/assets/logos/Kronix.svg"
-        alt=""
+        src={KronixLogo}
+        alt="Kronix logo"
       />
       <div className="flex items-center gap-8">
         <div className="space-x-4">
