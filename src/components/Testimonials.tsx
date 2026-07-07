@@ -2,11 +2,11 @@ import { AnimatePresence, motion, useInView } from "framer-motion";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
-import FluxaLogo from "@/logos/fluxa-logo.svg?react";
-import LumixLogo from "@/logos/lumix-logo.svg?react";
-import NexaLogo from "@/logos/nexa-logo.svg?react";
-import OrbixLogo from "@/logos/orbix-logo.svg?react";
-import VeloraLogo from "@/logos/velora-logo.svg?react";
+import FluxaLogo from "@/assets/logos/fluxa-logo.svg?react";
+import LumixLogo from "@/assets/logos/lumix-logo.svg?react";
+import NexaLogo from "@/assets/logos/nexa-logo.svg?react";
+import OrbixLogo from "@/assets/logos/orbix-logo.svg?react";
+import VeloraLogo from "@/assets/logos/velora-logo.svg?react";
 type Props = {};
 
 type Testimonial = {

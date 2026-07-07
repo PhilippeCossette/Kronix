@@ -1,7 +1,7 @@
 import { stagger, motion, useAnimate, useInView } from "framer-motion";
 import Button from "./Button";
 import Tag from "./Tag";
-import StarList from "@/logos/Star-list.svg?react";
+import StarList from "/public/icons/Star-list.svg?react";
 import { useEffect } from "react";
 import alertUser from "../utils/alertUser";
 

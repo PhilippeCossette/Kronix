@@ -125,8 +125,12 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     >
       <div className="flex gap-4 justify-between items-center">
         <h3 className="text-h5 font-semibold">{question}</h3>
-        <button className="bg-primary cursor-pointer text-black flex items-center justify-center text-2xl p-2 rounded-full">
+        <div
+          role="button"
+          className="bg-primary cursor-pointer text-black flex items-center justify-center text-2xl p-2 rounded-full"
+        >
           <motion.button
+            className="cursor-pointer"
             aria-label="Toggle Faq"
             animate={{ rotate: isOpen ? 180 : 0 }}
             transition={{
@@ -137,7 +141,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           >
             <IoIosArrowDown />
           </motion.button>
-        </button>
+        </div>
       </div>
       <AnimatePresence initial={false}>
         {isOpen && (

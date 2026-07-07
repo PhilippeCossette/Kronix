@@ -24,7 +24,7 @@ export default function Header({
     const animation = async () => {
       if (isInView) {
         await animate(
-          "h1",
+          "h2",
           { opacity: 1, y: 0 },
           { duration: 0.4, ease: "easeOut" },
         );
@@ -35,7 +35,7 @@ export default function Header({
         );
       } else {
         animate(
-          "h1",
+          "h2",
           { opacity: 0, y: 20 },
           { duration: 0.4, ease: "easeOut" },
         );
@@ -61,12 +61,12 @@ export default function Header({
         >
           {subtitle}
         </motion.p>
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           className="leading-[1.2] text-h2 font-bold"
         >
           {title}
-        </motion.h1>
+        </motion.h2>
       </div>
       <div className="md:mt-9 flex flex-col items-start gap-8">
         <motion.p initial={{ opacity: 0, y: 20 }} className="text-h4 font-thin">

@@ -12,11 +12,10 @@ export default function Footer({}: Props) {
     const aimation = async () => {
       if (isInView) {
         await animate(
-          "img, a, span, p",
+          "img, button,a, span, p",
           { opacity: 1, y: 0 },
           { duration: 0.8, ease: "easeOut", delay: stagger(0.1) },
         );
-      } else {
       }
     };
     aimation();
@@ -56,17 +55,27 @@ export default function Footer({}: Props) {
             (001)1231 3435
           </motion.a>
           <div className="flex gap-5 items-center">
-            <motion.a initial={{ opacity: 0, y: 20 }} href="">
-              <img src="logos/facebook.svg" alt="Facebook" />
+            <motion.a
+              className="size-6"
+              initial={{ opacity: 0, y: 20 }}
+              href="https://facebook.com"
+            >
+              <img src="src/assets/logos/facebook.svg" alt="Facebook" />
             </motion.a>
-            <motion.a initial={{ opacity: 0, y: 20 }} href="">
-              <img src="logos/instagram.svg" alt="Instagram" />
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              href="https://instagram.com"
+            >
+              <img src="src/assets/logos/instagram.svg" alt="Instagram" />
             </motion.a>
-            <motion.a initial={{ opacity: 0, y: 20 }} href="">
-              <img src="logos/indeed.svg" alt="indeed" />
+            <motion.a initial={{ opacity: 0, y: 20 }} href="https://indeed.com">
+              <img src="src/assets/logos/indeed.svg" alt="indeed" />
             </motion.a>
-            <motion.a initial={{ opacity: 0, y: 20 }} href="">
-              <img src="logos/dribble.svg" alt="dribble" />
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              href="https://dribbble.com"
+            >
+              <img src="src/assets/logos/dribble.svg" alt="dribble" />
             </motion.a>
           </div>
         </div>
@@ -76,14 +85,14 @@ export default function Footer({}: Props) {
         <div className="flex gap-4">
           {["Pricing", "Process", "Services", "Portfolio", "FAQ"].map(
             (item, index) => (
-              <motion.a
+              <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 className="text-white cursor-pointer hover:text-current/70 transition-colors duration-150"
                 key={index}
                 onClick={() => scrollToSection(item.toLowerCase())}
               >
                 {item}
-              </motion.a>
+              </motion.button>
             ),
           )}
         </div>

@@ -59,11 +59,11 @@ export default function CTA({}: Props) {
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        className="cta relative overflow-clip w-[90%] grid justify-items-center gap-8 rounded-4xl py-12 px-12 md:px-24 bg-cta-background"
+        className="cta z-50 relative overflow-clip w-[90%] grid justify-items-center gap-8 rounded-4xl py-12 px-12 md:px-24 bg-(--cta-background)"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
-          className="shadow absolute z-10 size-75 md:size-125 rounded-full blur-[160px] bg-[radial-gradient(circle,var(--primary)_0%,transparent_40%)]"
+          className="shadow absolute z-10 size-75 md:size-125 rounded-full blur-[160px] bg-[radial-gradient(circle,var(--primary)_0%,transparent_60%)]"
         />
 
         <motion.h2
@@ -82,7 +82,7 @@ export default function CTA({}: Props) {
           initial={{ opacity: 0, y: 20 }}
           title="See Pricing"
           variant="primary"
-          onClick={() => console.log("Button clicked!")}
+          onClick={() => alert("This is only a front-end project")}
         />
       </motion.div>
     </section>

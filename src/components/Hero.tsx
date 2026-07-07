@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { motion, stagger } from "framer-motion";
 import Button from "./Button";
-import FluxaLogo from "@/logos/fluxa-logo.svg?react";
-import LumixLogo from "@/logos/lumix-logo.svg?react";
-import NexaLogo from "@/logos/nexa-logo.svg?react";
-import OrbixLogo from "@/logos/orbix-logo.svg?react";
-import VeloraLogo from "@/logos/velora-logo.svg?react";
+import FluxaLogo from "@/assets/logos/fluxa-logo.svg?react";
+import LumixLogo from "@/assets/logos/lumix-logo.svg?react";
+import NexaLogo from "@/assets/logos/nexa-logo.svg?react";
+import OrbixLogo from "@/assets/logos/orbix-logo.svg?react";
+import VeloraLogo from "@/assets/logos/velora-logo.svg?react";
 import { useAnimate, useInView } from "framer-motion";
 import alertUser from "../utils/alertUser";
 

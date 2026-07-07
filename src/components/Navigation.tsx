@@ -73,7 +73,7 @@ function DesktopNavigation() {
     >
       <motion.img
         initial={{ opacity: 0, y: 20 }}
-        src="logos/Kronix.svg"
+        src="src/assets/logos/Kronix.svg"
         alt=""
       />
       <div className="flex items-center gap-8">
